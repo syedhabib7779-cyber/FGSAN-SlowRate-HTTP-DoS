@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "FGSAN: Feature-Grouped Self-Attention with Adversarial Training for Slow-Rate HTTP DoS Detection"
+type: software
+license: MIT
+version: 1.0.0
+authors:
+  - family-names: Shah
+    given-names: Syed Habib Ullah
+    affiliation: "The Superior University, Lahore, Pakistan"
+  - family-names: Akram
+    given-names: Sheeraz
+    affiliation: "The Superior University, Lahore, Pakistan"
+keywords:
+  - slow-rate denial-of-service
+  - Slowloris
+  - SlowHTTPTest
+  - intrusion detection
+  - adversarial training
+  - self-attention
+  - CICIDS2017
+preferred-citation:
+  type: article
+  title: "Feature-Grouped Self-Attention with Adversarial Training for Slow-Rate HTTP Denial-of-Service Detection"
+  authors:
+    - family-names: Shah
+      given-names: Syed Habib Ullah
+    - family-names: Akram
+      given-names: Sheeraz
+  status: submitted
+  year: 2026

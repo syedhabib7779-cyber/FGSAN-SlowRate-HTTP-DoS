@@ -1,0 +1,15 @@
+# Versions used for the paper (Google Colab, Python 3.13, NVIDIA T4, CUDA 13.0).
+# The exact pins for every package are in requirements.txt inside the release asset FGSAN_release.zip.
+# Install PyTorch for your CUDA version from https://pytorch.org first if not on Colab.
+torch==2.14.1
+scikit-learn==1.6.1
+xgboost==3.4.1
+lightgbm==4.7.0
+numpy
+pandas
+scipy
+statsmodels
+matplotlib
+seaborn
+joblib
+cycler
