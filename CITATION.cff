@@ -3,6 +3,7 @@ message: "If you use this code, please cite the article below."
 title: "FGSAN: Feature-Grouped Self-Attention with Adversarial Training for Slow-Rate HTTP DoS Detection"
 type: software
 license: MIT
+repository-code: "https://github.com/syedhabib7779-cyber/FGSAN-SlowRate-HTTP-DoS"
 version: 1.0.0
 authors:
   - family-names: Shah

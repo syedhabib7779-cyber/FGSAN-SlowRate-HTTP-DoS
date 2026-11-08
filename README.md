@@ -35,6 +35,7 @@ utils/
   RESTORE_main_model_direct.py     loads main_model.pt and checks F1 = 0.9612, 20 FP, 108 FN
   M20_publication_figure_style.py  figure style used for the published figures
 archive/fgsan_reproducibility_patch.py   notes on the determinism fixes (already applied in the notebook)
+figures_src/draw_fig1_fig2.py      source of the Fig. 1 and Fig. 2 diagrams (PDF/SVG/600-dpi PNG)
 data/README.md                     how to obtain CICIDS2017 and CSE-CIC-IDS2018
 ```
 
