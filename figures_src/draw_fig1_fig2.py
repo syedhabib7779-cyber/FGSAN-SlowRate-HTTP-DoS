@@ -2,8 +2,8 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
-plt.rcParams.update({'font.family': 'DejaVu Sans', 'pdf.fonttype': 42, 'ps.fonttype': 42, 'svg.fonttype': 'none'})
-OUT = './'  # output folder for the figure files
+plt.rcParams.update({'font.family': ['Liberation Sans', 'DejaVu Sans'], 'mathtext.fontset': 'dejavusans', 'pdf.fonttype': 42, 'ps.fonttype': 42, 'svg.fonttype': 'none'})
+OUT = './'
 C = dict(blue=('#3B5A7D', '#EEF2F7'), orange=('#B7802A', '#FCF3E3'), red=('#B5524A', '#FBEBEA'), green=('#4A7D5C', '#EAF3EC'))
 TXT, SUB = '#111111', '#3A4654'
 
@@ -111,8 +111,8 @@ def farr(ax, p, q):
     ax.add_patch(FancyArrowPatch(p, q, arrowstyle='-|>', mutation_scale=6.5, color='#2F3B4A', lw=0.8, shrinkA=0, shrinkB=0))
 W, H = 7.16, 3.75
 fig = plt.figure(figsize=(W, H)); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(0, H); ax.axis('off')
-ax.text(1.85, H - 0.08, '(a) FGSAN forward-pass architecture', ha='center', va='top', fontsize=8, fontweight='bold')
-ax.text(5.55, H - 0.08, '(b) Adversarial training loop (Algorithm 1)', ha='center', va='top', fontsize=8, fontweight='bold')
+ax.text(0.05, H - 0.08, '(a)', ha='left', va='top', fontsize=9, fontweight='bold')
+ax.text(3.95, H - 0.08, '(b)', ha='left', va='top', fontsize=9, fontweight='bold')
 # (a)
 cx = 1.85; bh = 0.25
 fbox(ax, cx, 3.25, 1.9, bh, 'blue', 'Flow feature vector  x ∈ ℝ²⁷')
@@ -134,7 +134,7 @@ rows = [(3.25, 'blue', 'Clean mini-batch\n(X, Y), size B'), (2.80, 'grey', 'Sele
         (2.35, 'red', 'PGD attack (T = 7 steps, ε = 0.05)\nfunctionality-preserving mask S'),
         (1.90, 'grey', "X′ = concat(adversarial samples,\nremaining clean samples)"),
         (1.45, 'green', 'FGSAN forward pass\n(panel a)'), (1.00, 'orange', 'Focal loss (α = 0.25, γ = 2.0)'),
-        (0.55, 'purple', 'Adam update:  θ ← θ − η∇$_θ$L')]
+        (0.55, 'purple', r'Adam update:  $\theta \leftarrow \theta - \eta\,\nabla_{\theta} L$')]
 for i, (y, k, t) in enumerate(rows):
     fbox(ax, cx, y, w, 0.28, k, t, fs=6.2)
     if i: farr(ax, (cx, rows[i - 1][0] - 0.14), (cx, y + 0.14))
