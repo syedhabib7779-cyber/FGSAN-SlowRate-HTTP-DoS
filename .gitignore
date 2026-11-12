@@ -1,0 +1,21 @@
+# data (CICIDS2017 / CSE-CIC-IDS2018 are not redistributed)
+data/*
+!data/README.md
+*.csv
+*.parquet
+# model checkpoints and run outputs (published as a release asset)
+*.pt
+*.pth
+*.joblib
+*.npz
+*.npy
+fgsan_ckpt/
+FGSAN_release/
+FGSAN_release.zip
+# python / jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
