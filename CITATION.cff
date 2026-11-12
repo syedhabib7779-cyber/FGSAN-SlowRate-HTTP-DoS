@@ -9,9 +9,19 @@ authors:
   - family-names: Shah
     given-names: Syed Habib Ullah
     affiliation: "The Superior University, Lahore, Pakistan"
+    orcid: "https://orcid.org/0009-0009-4749-8970"
   - family-names: Akram
     given-names: Sheeraz
     affiliation: "The Superior University, Lahore, Pakistan"
+  - family-names: Jaffar
+    given-names: M. Arfan
+    affiliation: "The Superior University, Lahore, Pakistan"
+  - family-names: Bhatti
+    given-names: Sohail Masood
+    affiliation: "The Superior University, Lahore, Pakistan"
+  - family-names: Rasheed
+    given-names: Mehwish
+    affiliation: "Riphah International University, Faisalabad Campus, Pakistan"
 keywords:
   - slow-rate denial-of-service
   - Slowloris
@@ -28,5 +38,11 @@ preferred-citation:
       given-names: Syed Habib Ullah
     - family-names: Akram
       given-names: Sheeraz
+    - family-names: Jaffar
+      given-names: M. Arfan
+    - family-names: Bhatti
+      given-names: Sohail Masood
+    - family-names: Rasheed
+      given-names: Mehwish
   status: submitted
   year: 2026
